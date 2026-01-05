@@ -2,7 +2,7 @@
 
 A collection of Photoshop actions for generating film-like chroma grain. These are intended for users who are dissatisfied with the usual luminance grain that most photo editing software offers and want more realistic results.
 
-I originally built these actions for my own work while experimenting with different approaches to film grain emulation. I no longer use these actions regularly, but I am sharing them in case they are useful to others.
+I originally built these actions for my own work while experimenting with different approaches to film grain emulation. I no longer use these actions regularly, but I am sharing them in case they are useful to others. (using Dehancer as a grain generator over upscaled images and some clever sharpening gives me comparable results and more control)
 
 The core idea behind all of these actions is simple: generate grain on an upscaled image, apply it, and then downscale the image back to the original resolution. This approach produces a finer and more believable, integrated grain structure compared to generating or overlaying noise directly at native resolution.
 
