@@ -88,7 +88,7 @@ Slower hardware will take longer, and larger images will put additional strain o
 ## Recommended Workflow
 
 1. Edit your image as you normally would. Consider avoiding detail tools such as sharpening and luminance or color noise reduction.
-2. Load the image into Photoshop, preferably as a 16 bit sRGB file. The actions will convert the image to RGB if needed.
+2. Load the image into Photoshop, preferably as a 16 bit sRGB file. The actions should convert the image to RGB, but you never know.
 3. Choose and run one of the actions. A new snapshot will be generated so you can quickly compare results or revert.
 
 ---
