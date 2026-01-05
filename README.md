@@ -98,4 +98,3 @@ Slower hardware will take longer, and larger images will put additional strain o
 1. Download the .atn file.
 2. Ensure the Actions pane in Photoshop is enabled via Window > Actions.
 3. Drag the .atn file into the Actions pane.
-   (or just search the web...)
