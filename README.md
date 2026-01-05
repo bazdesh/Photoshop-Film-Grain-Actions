@@ -2,7 +2,7 @@
 
 A collection of Photoshop actions for generating film-like chroma grain. These are intended for users who are dissatisfied with the usual luminance grain that most photo editing software offers and want more realistic results.
 
-I originally built these actions for my own work while experimenting with different approaches to film grain emulation. I no longer use these actions regularly, but I am sharing them in case they are useful to others. (using Dehancer as a grain generator over upscaled images and some clever sharpening gives me comparable results and more control)
+I originally built these actions for my own work while experimenting with different approaches to film grain emulation. I no longer use these actions regularly, but I am sharing them in case they are useful to others. (using Dehancer as a grain generator over upscaled images and some clever sharpening gives me comparable results and more direct control, though I still prefer the more colorful look coming from "my" action)
 
 The core idea behind all of these actions is simple: generate grain on an upscaled image, apply it, and then downscale the image back to the original resolution. This approach produces a finer and more believable, integrated grain structure compared to generating or overlaying noise directly at native resolution.
 
@@ -71,15 +71,15 @@ Below is a reference table showing the included upscale and downscale combinatio
 
 I did not include every scaling option for all grain generators, only for the main Negative Film Grain action. The rest can be adapted manually if needed.
 
-I recommend sticking to the 125 percent to 250 percent options. For finer grain, use 250 percent. For rougher grain, use 125 percent. The 320 percent and 400 percent options are generally too slow for practical use, but they can be useful for low resolution images. For example, using 400 percent without downscaling can fake a surprising amount of perceived resolution through grain structure alone.
+I recommend sticking to the 125 percent to 250 percent options. For finer grain, use 250 percent. For rougher grain, use 125 percent. The 320 percent and 400 percent options are generally too slow for practical use, but they can be useful for low resolution images. Also, using the 200 to 400 percent upscale options without downscaling can fake a surprising amount of perceived resolution through grain structure alone.
 
-As a general guideline, aim for roughly 100 megapixels. For example, with a 24 megapixel source image, a 200 percent upscale results in approximately 96 megapixels.
+As a general guideline, aim for roughly 100 megapixels after upscaling. For example, with a 24 megapixel source image, a 200-250 percent upscale works the best.
 
 ---
 
 ## Performance
 
-Working at high resolution is computationally expensive. On a system equipped with an RTX 4080, the Negative Film Grain action takes approximately 20 seconds to complete using a 24 MP file upscaled to 96 MP. On a laptop with AMD integrated graphics, the same files can take up to two minutes.
+Working at high resolution is computationally expensive. On a system equipped with an RTX 4080, the Negative Film Grain action takes approximately 20 seconds to complete using a 24 MP file upscaled to 96 MP. On a laptop with AMD integrated graphics, the same files can take up to 2 minutes.
 
 Slower hardware will take longer, and larger images will put additional strain on system memory. Photoshop may appear to hang during processing. Be patient. If it crashes, use a smaller upscale percentage or downscale the image beforehand.
 
